@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartConnect - Digital Contact Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <h1>SmartConnect</h1>
+<p>Digital Contact Organizer</p>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>📇</h2>
+        <h3>Total Contacts</h3>
+        <p id="totalContacts">0</p>
+    </div>
+
+    <div class="card">
+        <h2>⭐</h2>
+        <h3>Favorites</h3>
+        <p id="favoriteCount">0</p>
+    </div>
+
+    <div class="card">
+        <h2>➕</h2>
+        <h3>Add Contact</h3>
+        <button onclick="document.getElementById('contactForm').style.display='block'">Add New</button>
+    </div>
+
+</div>
+<div id="contactForm" class="contact-form">
+
+    <h2>Add New Contact</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="text" id="phone" placeholder="Enter Phone Number">
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <button onclick="addContact()">Save Contact</button>
+
+</div>
+<input type="text" id="search" placeholder="🔍 Search Contact" oninput="searchContacts()">
+<button onclick="sortContacts()">🔤 Sort Contacts</button>
+<button onclick="document.getElementById('contactForm').style.display='none'">
+    Cancel
+</button>
+<div id="contactList"></div>
+<div id="contactList"></div>
+<script src="script.js"></script>
+</body>
+</html>
