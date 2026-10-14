@@ -176,3 +176,11 @@ button:hover {
         width: 90%;
     }
 }
+.college-logo {
+    width: 180px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 5px;
+}
